@@ -4,7 +4,6 @@ export const navItems = [
   ["Experience", "#experience"],
   ["Projects", "#projects"],
   ["Skills", "#skills"],
-  ["Contact", "#contact"],
 ];
 
 export const experience = [
