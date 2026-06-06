@@ -17,12 +17,6 @@ export default function Hero() {
           <a className="button button-primary" href="#projects">
             View Projects
           </a>
-          <a className="button button-secondary" href="#contact">
-            Contact Me
-          </a>
-          <a className="button button-ghost" href="#" download>
-            Download CV
-          </a>
         </div>
       </div>
 
