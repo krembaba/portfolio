@@ -51,8 +51,8 @@ export default function Projects() {
           <h2>Portfolio work with full-stack and interactive systems focus.</h2>
         </div>
         <p>
-          Each project card has placeholder links and image areas that can be replaced when demos,
-          screenshots, or repositories are ready.
+          These projects show how I approach real software: clear structure, practical user flows,
+          and technical decisions across web platforms and interactive Java applications.
         </p>
       </div>
 
