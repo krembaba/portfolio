@@ -63,7 +63,7 @@ export const projects = [
     mediaLabel: "Dashboard / platform screenshot",
     icon: "/images/learnix-logo.png",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/krembaba/Learnix-App",
   },
   {
     title: "Route and Riches",
@@ -77,7 +77,7 @@ export const projects = [
     mediaLabel: "Gameplay screenshot / video preview",
     icon: "/images/Logo_routeandriches.png",
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/krembaba/Route-and-Riches-/tree/master",
   },
 ];
 
