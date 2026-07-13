@@ -9,13 +9,13 @@ export const navItems = [
 export const experience = [
   {
     role: "Web Developer Intern",
-    company: "Limelightr",
+    company: "LimeLightr",
     duration: "3 months",
     bullets: [
-      "Worked as a Web Developer intern using JavaScript and TypeScript.",
-      "Contributed to web development tasks in a professional environment.",
-      "Improved practical frontend/backend development skills.",
-      "Worked with a team and learned from feedback during real development tasks.",
+      "Developed responsive web applications for real clients, translating Figma designs into functional pages.",
+      "Built reusable components in JavaScript, HTML, and CSS.",
+      "Participated in Git-based code reviews with the development team.",
+      "Worked with JavaScript and TypeScript on production frontend tasks.",
     ],
   },
   {
@@ -62,7 +62,6 @@ export const projects = [
     mediaAlt: "Learnix dashboard or platform screenshot placeholder",
     mediaLabel: "Dashboard / platform screenshot",
     icon: "/images/learnix-logo.png",
-    demoUrl: "#",
     githubUrl: "https://github.com/krembaba/Learnix-App",
   },
   {
@@ -76,15 +75,14 @@ export const projects = [
     mediaAlt: "Route and Riches gameplay screenshot or video preview placeholder",
     mediaLabel: "Gameplay screenshot / video preview",
     icon: "/images/Logo_routeandriches.png",
-    demoUrl: "#",
-    githubUrl: "https://github.com/krembaba/Route-and-Riches-/tree/master",
+    githubUrl: "https://github.com/krembaba/Route-and-Riches-",
   },
 ];
 
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "Java", "C", "C++", "C#"],
+    items: ["JavaScript", "TypeScript (growing)", "Python", "Java", "C", "C++", "C#"],
   },
   {
     title: "Frontend",
@@ -116,7 +114,7 @@ export const skillGroups = [
 
 export const contact = {
   email: "dionismajli1@gmail.com",
-  phone: "+36205634824",
+  phone: "+383 44 622 150",
   location: "Budapest, Hungary",
   linkedin: "https://www.linkedin.com/in/dion-ismajli-2977bb187",
   github: "https://github.com/krembaba",

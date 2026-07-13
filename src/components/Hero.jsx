@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="hero-copy">
         <p className="eyebrow">Portfolio · Full-Stack Development · Computer Science</p>
         <h1>Dion Ismajli</h1>
-        <p className="hero-role">Full-Stack Developer & Computer Science Student</p>
+        <p className="hero-role">Developer & Computer Science Student</p>
         <p className="hero-subtitle">
           Final-year Computer Science student at ELTE with a strong interest in full-stack
           development, software engineering, and interactive systems.
