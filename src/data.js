@@ -77,6 +77,19 @@ export const projects = [
     githubUrl: "https://github.com/krembaba/Learnix-App",
   },
   {
+    title: "Invoice Creator",
+    category: "Python Desktop App",
+    description:
+      "A desktop app for creating business invoices: pick a saved client, add items, and it generates a numbered Word invoice in Albanian, English, or Serbian. Totals and VAT update live, every invoice is logged to a CSV that opens in Excel, and it ships as a standalone Windows .exe.",
+    technologies: ["Python", "Tkinter", "Word (.docx) templating", "CSV/JSON", "PyInstaller"],
+    mediaType: "image",
+    mediaSrc: "/images/Invoice_Creator.png",
+    mediaAlt: "Invoice Creator new invoice form",
+    // Which part of the screenshot stays visible when the card crops it.
+    mediaPosition: "left top",
+    githubUrl: "https://github.com/krembaba/L-aquila-Invoice-Creator",
+  },
+  {
     title: "Route and Riches",
     category: "Java Transport Simulation Game",
     description:

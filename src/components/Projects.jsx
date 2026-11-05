@@ -5,7 +5,14 @@ import SectionHeader from "./SectionHeader.jsx";
 function ProjectThumb({ project }) {
   // Set mediaType to "image" or "video" and mediaSrc in src/data.js to show a screenshot or clip.
   if (project.mediaType === "image" && project.mediaSrc) {
-    return <img src={project.mediaSrc} alt={project.mediaAlt} loading="lazy" />;
+    return (
+      <img
+        src={project.mediaSrc}
+        alt={project.mediaAlt}
+        loading="lazy"
+        style={project.mediaPosition ? { objectPosition: project.mediaPosition } : undefined}
+      />
+    );
   }
 
   if (project.mediaType === "video" && project.mediaSrc) {
