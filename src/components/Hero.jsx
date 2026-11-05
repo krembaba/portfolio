@@ -4,7 +4,6 @@ import Icon from "./Icons.jsx";
 const codeLines = [
   [["kw", "const"], ["var", " dion"], ["pn", " = {"]],
   [["prop", "  role"], ["pn", ": "], ["str", '"Software Developer"'], ["pn", ","]],
-  [["prop", "  company"], ["pn", ": "], ["str", '"L\'Aquila Company"'], ["pn", ","]],
   [["prop", "  location"], ["pn", ": "], ["str", '"Prishtina, Kosovo"'], ["pn", ","]],
   [["prop", "  education"], ["pn", ": "], ["str", '"BSc CS @ ELTE, 2026"'], ["pn", ","]],
   [["prop", "  stack"], ["pn", ": ["], ["str", '"Java"'], ["pn", ", "], ["str", '"Spring Boot"'], ["pn", ","]],
