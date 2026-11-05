@@ -1,37 +1,52 @@
 import { education, experience } from "../data.js";
+import SectionHeader from "./SectionHeader.jsx";
 
-function TimelineCard({ item, type }) {
+function TimelineItem({ title, org, duration, bullets }) {
   return (
-    <article className="timeline-card">
-      <div>
-        <p className="timeline-type">{type}</p>
-        <h3>{item.role || item.title}</h3>
-        <span>{item.company || item.school}</span>
+    <article className="timeline-item">
+      <p className="timeline-date">{duration}</p>
+      <div className="timeline-body">
+        <h4>{title}</h4>
+        <p className="timeline-org">{org}</p>
+        <ul>
+          {bullets.map((bullet) => (
+            <li key={bullet}>{bullet}</li>
+          ))}
+        </ul>
       </div>
-      <time>{item.duration}</time>
-      <ul>
-        {item.bullets.map((bullet) => (
-          <li key={bullet}>{bullet}</li>
-        ))}
-      </ul>
     </article>
   );
 }
 
 export default function Experience() {
   return (
-    <section className="experience section-shell" id="experience">
-      <div className="section-heading">
-        <p className="eyebrow">Experience & Education</p>
-        <h2>Real practice, academic foundation, and steady development.</h2>
-      </div>
-      <div className="timeline-grid">
-        {experience.map((item) => (
-          <TimelineCard key={`${item.role}-${item.company}`} item={item} type="Experience" />
-        ))}
-        {education.map((item) => (
-          <TimelineCard key={`${item.title}-${item.school}`} item={item} type="Education" />
-        ))}
+    <section className="section" id="experience">
+      <div className="container">
+        <SectionHeader index="02" title="experience" subtitle="Where I've Worked" />
+        <div className="timeline">
+          {experience.map((item) => (
+            <TimelineItem
+              key={`${item.role}-${item.company}`}
+              title={item.role}
+              org={item.company}
+              duration={item.duration}
+              bullets={item.bullets}
+            />
+          ))}
+        </div>
+
+        <h3 className="subsection-title">Education</h3>
+        <div className="timeline">
+          {education.map((item) => (
+            <TimelineItem
+              key={`${item.title}-${item.school}`}
+              title={item.title}
+              org={item.school}
+              duration={item.duration}
+              bullets={item.bullets}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

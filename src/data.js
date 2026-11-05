@@ -4,49 +4,62 @@ export const navItems = [
   ["Experience", "#experience"],
   ["Projects", "#projects"],
   ["Skills", "#skills"],
+  ["Contact", "#contact"],
 ];
 
 export const experience = [
   {
-    role: "Web Developer Intern",
-    company: "LimeLightr",
-    duration: "3 months",
+    role: "Software Developer",
+    company: "L'Aquila Company",
+    duration: "May 2026 – Present",
     bullets: [
-      "Developed responsive web applications for real clients, translating Figma designs into functional pages.",
-      "Built reusable components in JavaScript, HTML, and CSS.",
-      "Participated in Git-based code reviews with the development team.",
-      "Worked with JavaScript and TypeScript on production frontend tasks.",
+      "Built and maintain internal REST APIs and backend services in Java (Spring Boot).",
+      "Designed the PostgreSQL schema for an internal asset and ticketing tool, replacing spreadsheet tracking.",
+      "Write technical documentation and runbooks for each service in production.",
+      "Automated recurring deployment and backup tasks with Bash and Python, cutting manual work by about 50%.",
+      "Containerized internal applications with Docker and set up GitHub Actions pipelines for automated builds and tests.",
     ],
   },
   {
-    role: "IT & Software Support Technician",
-    company: "L'Aquila Company",
-    duration: "April 2023 - August 2023",
+    role: "Web Development Intern",
+    company: "LimeLightr",
+    duration: "February 2026 – April 2026",
     bullets: [
-      "Supported software setup, system configuration, and update deployment across internal machines.",
-      "Troubleshot software, system, and network issues using step by step debugging and log checking.",
-      "Created small scripts to automate repetitive technical tasks.",
-      "Documented technical procedures and helped make support workflows easier to repeat.",
-      "Worked with users and team members to understand technical problems and find practical solutions.",
+      "Assisted in the development of responsive websites for a variety of clients.",
+      "Translated Figma designs into fully functional web pages.",
+      "Collaborated with the development team to build, test, and refine client websites.",
+      "Worked with modern front-end development practices to ensure cross-browser compatibility.",
+      "Used Git and GitHub for version control, code reviews, and collaborative development.",
+      "Debugged and resolved front-end issues, improving website functionality and usability.",
+      "Built reusable front-end components using HTML, CSS, and JavaScript.",
+      "Implemented interactive front-end animations to enhance user experience.",
+    ],
+  },
+  {
+    role: "IT Technician",
+    company: "L'Aquila Company",
+    duration: "April 2023 – August 2023",
+    bullets: [
+      "Maintained Linux and Windows servers.",
+      "Monitored server health, uptime, and data integrity.",
+      "Configured internal systems and work environments.",
+      "Deployed software updates across multiple machines.",
+      "Performed network, hardware, and software troubleshooting.",
+      "Assisted with automation through scripting.",
+      "Improved internal tooling and maintenance workflows.",
+      "Documented technical procedures and system processes.",
     ],
   },
 ];
 
 export const education = [
   {
-    school: "Eötvös Loránd University (ELTE) — Faculty of Informatics",
-    title: "Bachelor of Computer Science",
-    duration: "September 2022 - July 2026",
+    school: "Eötvös Loránd University (ELTE)",
+    title: "Bachelor of Science in Computer Science",
+    duration: "September 2022 – July 2026",
     bullets: [
-      "Comprehensive curriculum focused on programming, computer systems, software development, and emerging technologies.",
-      "Strong foundation in theoretical and practical computer science.",
+      "Built a solid foundation in programming, operating systems, and networking while developing the technical skills required for a better career.",
     ],
-  },
-  {
-    school: "Sami Frasheri High School",
-    title: "Java programming foundations",
-    duration: "September 2019 - May 2022",
-    bullets: ["Completed a Java programming course to build foundational programming skills."],
   },
 ];
 
@@ -55,12 +68,11 @@ export const projects = [
     title: "Learnix",
     category: "Full-Stack Educational Platform",
     description:
-      "Learnix is my thesis project, a full stack educational platform designed for classroom and self study use. It includes a modern web frontend, persistent data storage, role based user management, and interactive visual learning modules. The system supports students, teachers, and administrators, with features for exploring concepts, managing learning resources, and supervising platform operations.",
+      "My thesis project: a full-stack learning platform for classroom and self-study, with role-based accounts for students, teachers, and administrators, user dashboards, and interactive visual learning modules.",
     technologies: ["React", "Node.js", "REST APIs", "SQL", "JavaScript/TypeScript"],
     mediaType: "image",
     mediaSrc: "/images/learnixpage.png",
-    mediaAlt: "Learnix dashboard or platform screenshot placeholder",
-    mediaLabel: "Dashboard / platform screenshot",
+    mediaAlt: "Learnix visualization module screenshot",
     icon: "/images/learnix-logo.png",
     githubUrl: "https://github.com/krembaba/Learnix-App",
   },
@@ -68,46 +80,67 @@ export const projects = [
     title: "Route and Riches",
     category: "Java Transport Simulation Game",
     description:
-      "Route and Riches is a 2D top-down tile based transport management game built in Java using JavaFX. The player builds roads, places stops, creates routes, manages vehicles, and earns money by transporting passengers between stops. The game includes real time gameplay with pause, normal, and fast speed settings.",
-    technologies: ["Java", "JavaFX", "Object-Oriented Programming", "Game Logic"],
+      "A 2D top-down, tile-based transport tycoon in Java and JavaFX. Players build roads, stops, and routes while vehicles navigate the network with pathfinding, in real time with pause, normal, and fast speeds.",
+    technologies: ["Java", "JavaFX", "Object-Oriented Programming", "Pathfinding", "Git"],
     mediaType: "video",
     mediaSrc: "/images/routeandrichesvideo.mp4",
-    mediaAlt: "Route and Riches gameplay screenshot or video preview placeholder",
-    mediaLabel: "Gameplay screenshot / video preview",
+    mediaAlt: "Route and Riches gameplay video",
     icon: "/images/Logo_routeandriches.png",
     githubUrl: "https://github.com/krembaba/Route-and-Riches-",
+  },
+  {
+    title: "Platform Lab",
+    category: "DevOps Learning Project",
+    description:
+      "A hands-on project to learn the deployment side end to end: GitHub Actions tests a small Python (FastAPI) service and publishes its image, ArgoCD deploys it to a Kubernetes cluster provisioned with Terraform, and Prometheus and Grafana monitor it.",
+    technologies: ["Python", "FastAPI", "Kubernetes", "GitHub Actions", "Terraform", "ArgoCD"],
+    // No screenshot yet: the card shows the icon. Set mediaType "image" and mediaSrc to add one.
+    mediaType: "icon",
+    mediaAlt: "Platform Lab icon",
+    icon: "/images/platform-lab-icon.svg",
+    githubUrl: "https://github.com/krembaba/platform-lab",
   },
 ];
 
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript (growing)", "Python", "Java", "C", "C++", "C#"],
-  },
-  {
-    title: "Frontend",
-    items: ["HTML5", "CSS3", "SCSS", "React", "Angular basics"],
+    items: ["Java", "JavaScript (ES6+)", "TypeScript", "Python", "SQL", "C#", "PHP"],
   },
   {
     title: "Backend",
-    items: ["Node.js basics", "Express.js basics", "REST APIs", "HTTP basics"],
+    items: [
+      "Spring Boot",
+      "Node.js",
+      "Express",
+      "REST API design",
+      "JWT authentication",
+      "Laravel (basic)",
+    ],
+  },
+  {
+    title: "Frontend",
+    items: ["React", "HTML", "CSS", "SCSS", "Responsive design", "Figma to code"],
   },
   {
     title: "Databases",
-    items: ["SQL", "Database Design", "MongoDB basics"],
+    items: ["PostgreSQL", "MySQL", "Schema design", "Indexing", "Query optimization"],
   },
   {
-    title: "Tools",
-    items: ["Git", "GitHub", "Debugging", "Documentation"],
+    title: "Testing & Tools",
+    items: ["Git/GitHub", "JUnit", "Jest", "Postman", "Swagger/OpenAPI"],
   },
   {
-    title: "Other",
+    title: "DevOps & Systems",
     items: [
-      "Object-Oriented Programming",
-      "Data Structures",
-      "Algorithms",
-      "Software Development Fundamentals",
-      "Interactive Systems",
+      "Docker",
+      "GitHub Actions",
+      "Nginx",
+      "AWS",
+      "Bash",
+      "Linux & Windows administration",
+      "Kubernetes (learning)",
+      "Terraform (learning)",
     ],
   },
 ];
@@ -115,7 +148,7 @@ export const skillGroups = [
 export const contact = {
   email: "dionismajli1@gmail.com",
   phone: "+383 44 622 150",
-  location: "Budapest, Hungary",
+  location: "Prishtina, Kosovo",
   linkedin: "https://www.linkedin.com/in/dion-ismajli-2977bb187",
   github: "https://github.com/krembaba",
 };

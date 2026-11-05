@@ -1,29 +1,28 @@
 import { skillGroups } from "../data.js";
+import SectionHeader from "./SectionHeader.jsx";
 
 export default function Skills() {
   return (
-    <section className="skills-section section-shell" id="skills">
-      <div className="section-heading split-heading">
-        <div>
-          <p className="eyebrow">Skills</p>
-          <h2>Technical skills grouped for quick scanning.</h2>
+    <section className="section" id="skills">
+      <div className="container">
+        <SectionHeader index="04" title="skills" subtitle="Tools I Work With">
+          The languages, frameworks, and tools I build with, from backend services and front-end
+          interfaces to the DevOps tooling that ships them.
+        </SectionHeader>
+        <div className="skills-grid">
+          {skillGroups.map((group) => (
+            <article className="skill-box" key={group.title}>
+              <h4>{group.title}</h4>
+              <div className="tag-list">
+                {group.items.map((item) => (
+                  <span className="tag tag-plain" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
-        <p>
-          A mix of software development, programming fundamentals, debugging, and computer science
-          foundations.
-        </p>
-      </div>
-      <div className="skills-grid">
-        {skillGroups.map((group) => (
-          <article className="skill-card" key={group.title}>
-            <h3>{group.title}</h3>
-            <div>
-              {group.items.map((item) => (
-                <span key={item}>{item}</span>
-              ))}
-            </div>
-          </article>
-        ))}
       </div>
     </section>
   );

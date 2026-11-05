@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="32" fill="#05070d"/>
+  <rect width="64" height="64" rx="12" fill="#241d15"/>
   <text
     x="50%"
-    y="52%"
+    y="54%"
     dominant-baseline="middle"
     text-anchor="middle"
-    fill="#ffffff"
-    font-family="Inter, Arial, sans-serif"
-    font-size="22"
+    fill="#f2a541"
+    font-family="system-ui, 'Segoe UI', Arial, sans-serif"
+    font-size="28"
     font-weight="800"
+    letter-spacing="-1"
   >DI</text>
 </svg>
